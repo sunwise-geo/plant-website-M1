@@ -5,6 +5,8 @@
     font-family: 'Comic Sans MS';
     /*Ceci permet de faire un reset des marges intérieurs et extérieures des différents éléments (src:https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-horizontal-sticky/)*/
 }
+
+
 nav ul{
     list-style-type: none;
 }
@@ -13,6 +15,8 @@ nav li{
     width: 20%;
     text-align:center;
 }
+
+
 nav ul::after{
     content:"";
     display: table;
@@ -25,13 +29,15 @@ nav{
     position: sticky;
     top:0px;
 }
-nav a{
-    display:block;
-    text-decoration: none;
-    color: white;
-    border-bottom:4px solid transparent;
-    padding: 5px 0px;
+nav a {
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+  display: block;
+  text-decoration: none;
+  color: white;
+  border-bottom: 4px solid transparent;
+  padding: 5px 0;
 }
+
 nav a:hover{
     color:lightgreen;
     border-bottom: 4px solid brown;
@@ -45,7 +51,7 @@ nav a:hover{
     height: auto;    
 }
 .with-icon a {
-    margin-right: auto;
+    margin-left: auto;
 }
 body{
    
@@ -60,7 +66,8 @@ h1{
     text-align:center;
     background-color: transparent;
 }
-#hero{    
+#hero{  
+    font-size: larger;  
     background-color: rgba(255, 255, 255, 0.7); /* blanc transparent */
     padding: 10px 10px;
     border-radius: 1px;
