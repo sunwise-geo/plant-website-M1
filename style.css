@@ -1,0 +1,78 @@
+ 
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Comic Sans MS';
+    /*Ceci permet de faire un reset des marges intérieurs et extérieures des différents éléments (src:https://www.pierre-giraud.com/html-css-apprendre-coder-cours/creation-menu-horizontal-sticky/)*/
+}
+nav ul{
+    list-style-type: none;
+}
+nav li{
+    float: left;
+    width: 20%;
+    text-align:center;
+}
+nav ul::after{
+    content:"";
+    display: table;
+    clear: both;
+}
+nav{
+    width:100%;
+    margin:10 auto;
+    background-color: green;
+    position: sticky;
+    top:0px;
+}
+nav a{
+    display:block;
+    text-decoration: none;
+    color: white;
+    border-bottom:4px solid transparent;
+    padding: 5px 0px;
+}
+nav a:hover{
+    color:lightgreen;
+    border-bottom: 4px solid brown;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.icon{    
+    width: 50px;
+    height: auto;    
+}
+.with-icon a {
+    margin-right: auto;
+}
+body{
+   
+    background-image: url("background.jpg");
+    background-size:cover;
+    background-position: bottom;
+}
+h1{
+    display: flex;
+    margin-top: 1cm;
+    color: darkgreen;
+    text-align:center;
+    background-color: transparent;
+}
+#hero{    
+    background-color: rgba(255, 255, 255, 0.7); /* blanc transparent */
+    padding: 10px 10px;
+    border-radius: 1px;
+    width:fit-content;
+}
+#ti-text{
+    display: flex;
+    margin-top: 10px;
+    text-align: left;
+    color: darkgreen;
+}
+img{
+	display:flex;
+	position: sticky;
+}
