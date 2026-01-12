@@ -60,26 +60,33 @@ body{
     background-position: bottom;
 }
 h1{
-    display: flex;
+    font-size: 40-large;
     margin-top: 1cm;
     color: darkgreen;
     text-align:center;
     background-color: transparent;
 }
-#hero{  
+#hero{
+    
     font-size: larger;  
     background-color: rgba(255, 255, 255, 0.7); /* blanc transparent */
     padding: 10px 10px;
     border-radius: 1px;
     width:fit-content;
+    border-style: raidus;
+    margin: auto;
 }
 #ti-text{
-    display: flex;
-    margin-top: 10px;
-    text-align: left;
+    padding: 10px 10px;
+    margin-top: 1cm;
+    text-align: center;
     color: darkgreen;
+    
+
 }
 img{
 	display:flex;
 	position: sticky;
 }
+
+
