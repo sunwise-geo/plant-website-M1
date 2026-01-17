@@ -1,25 +1,37 @@
- 
-
-
-
-nav ul{
-    list-style-type: none;
+ nav ul{
+  list-style-type: none;
+  display: flex;
+  padding: 0px;
+  margin: 1px;
     /*list-style-type: none; enlève les puces devant les éléments de la liste.*/
 }
 nav li{
-    float: left;
-    width: 20%;
-    text-align:center;
+    width: 25%;
+
+    .icon{
+        font-size: 50%; 
+        width: 50px;
+        height: auto;
+        margin-left: 5em;
+          
+    }
+    /*float: left;*/
+    
     /*Pour aligner les éléments de la liste horizontalement*/
+    
 }
+
+
 
 
 nav ul::after{
     content:"";
     display: table;
     clear: both;
-    /*Pour éviter que les éléments flottants ne débordent de leur conteneur*/
-}
+    /*Pour éviter que les éléments flottants ne débordent de leur conteneur
+*/}
+    
+
 nav{
     width:100%;
     height: 55px;
@@ -28,40 +40,41 @@ nav{
     position: sticky;
     border-radius: 15px;
 }
+
+ 
 nav a {
-  width: 100%;
-  max-width: 1200px;          /* limite sur grands écrans */
-  height: auto;               /* permet l’adaptation */
-  margin: 10px auto;
-
-  font-size: clamp(1rem, 2.5vw, 1.5rem);
-  display: flex;
-  justify-content: center; /* centre horizontalement */
-  align-items: center; /* centre verticalement */  
-  text-decoration: none;
+  display: block;
+  text-align: center;
+  font-size: clamp(1.25rem, 1.2vw, 1rem);
+  text-align: center;
+  font-weight: bold;
   color: white;
-  border-bottom: 4px solid transparent;
-  padding: 5px 10px;
 
-   flex-wrap: wrap;   
 }
 
 nav a:hover{
-    color:lightgreen;
-    border-bottom: 4px solid darkgreen;
+    position: relative;
+    color: rgb(209, 193, 102);
+    font-weight: bold;
 /* Ajout d'une bordure inférieure lors du survol */
+}
+@media (max-width: 768px) {
+  nav a {
+    font-size: 0.8rem;
+  }
+  /*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
 }
 .menu {
     display: flex;
     align-items: center;
 }
-.icon{    
+/*.icon{    
     width: 50px;
     height: auto;    
 }
 .with-icon a {
     margin-left: auto;
-}
+}*/
 body{
    
     background-image: url("img_2.jpg");
@@ -73,19 +86,22 @@ h1{
     margin-top: 1cm;
     color: darkgreen;
     text-align:center;
-    border-radius: 10%;
+    border-radius: 10px;
     background-color: transparent;
     
 }
+
 #hero{
-    
-    font-size: larger;  
-    background-color: rgba(255, 255, 255, 0.7); /* blanc transparent */
+    margin: 60px auto;
+    font-size: larger; 
+    background-color: rgba(223, 211, 162, 0.7); /* blanc transparent */
     padding: 10px 10px;
-    border-radius: 1px;
+    border-radius: 10px;
     width:fit-content;
-    border-style: raidus 10%;
-    margin: auto;
+    border-style: solid;
+    border-color: darkgreen;
+    border-width: 2px;
+    
 
 }
 img{
@@ -93,9 +109,12 @@ img{
 	position: sticky;
 }
 
-#content {
-    margin: 20px;
-    padding: 20px;
+#intro {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px 200px 20px;
+    padding: 15px;
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     color: darkgreen;
@@ -107,4 +126,39 @@ img{
     font-weight: bold;
 }
 
+#content {
+    font-size: 1.2em;
+    margin-top: auto;
+    padding: 50px 50px;
+    background-color: rgba(218, 212, 182, 0.719);
+    border-radius: 30px;
+    color: darkgreen;
+    line-height: 1.6;
+    image-rendering: auto;
+
+    text-align: left;
+    font-size: medium;
+    border: 2px solid rgb(5, 63, 30);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);    
+
+}
+.nom{
+    text-align: left;
+    font-size: large;
+    font-weight: bold;
+    border: 2px solid rgb(5, 63, 30);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);    
+}
+#info{
+    text-align: left;
+    font-size: medium;
+    border: 2px solid rgb(5, 63, 30);
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);    
+}
 
