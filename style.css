@@ -135,14 +135,7 @@ img{
     color: darkgreen;
     line-height: 1.6;
     image-rendering: auto;
-
-    text-align: left;
-    font-size: medium;
-    border: 2px solid rgb(5, 63, 30);
-    border-radius: 30px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);    
-
+    
 }
 .nom{
     text-align: left;
