@@ -2,27 +2,26 @@
   list-style-type: none;
   display: flex;
   padding: 0px;
-  margin: 1px;
+  margin: 0px;
     /*list-style-type: none; enlève les puces devant les éléments de la liste.*/
 }
 nav li{
     width: 25%;
+    padding-top: 0%;
 
-    .icon{
+
+    .icon{       
         font-size: 50%; 
         width: 50px;
         height: auto;
         margin-left: 5em;
           
     }
-    /*float: left;*/
+    
     
     /*Pour aligner les éléments de la liste horizontalement*/
     
 }
-
-
-
 
 nav ul::after{
     content:"";
@@ -43,6 +42,7 @@ nav{
 
  
 nav a {
+  padding-top: 0px;  
   display: block;
   text-align: center;
   font-size: clamp(1.25rem, 1.2vw, 1rem);
@@ -69,13 +69,7 @@ nav a:hover{
     display: flex;
     align-items: center;
 }
-/*.icon{    
-    width: 50px;
-    height: auto;    
-}
-.with-icon a {
-    margin-left: auto;
-}*/
+
 body{
    
     background-image: url("img_2.jpg");
@@ -105,14 +99,14 @@ h1{
     
 
 }
-img{
+/*img{
+    float: left;
 	display:flex;
 	position: left;
     max-width: 100%;
     height: auto;
-    border-radius: 20px;
     padding-top: 3.5px;
-}
+}*/
 
              
 #intro {
@@ -123,6 +117,7 @@ img{
     background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
     color: darkgreen;
+    width:fit-content;
 }
 
 
@@ -147,7 +142,7 @@ img{
    
     
 }
-.nom{
+#nom{
     text-align: left;
     font-size: large;
     font-weight: bold;
@@ -157,13 +152,48 @@ img{
     background-color: rgba(255, 255, 255, 0.8);    
 }
 
-#info{
+/*#info{
+    margin-left: 500px;
     text-align: left;
     font-size: medium;
     border: 2px solid rgb(5, 63, 30);
     border-radius: 30px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);    
+    background-color: rgba(255, 255, 255, 0.8);
+    
+}*/
+
+
+.container {
+background-color: rgba(255, 235, 205, 0.315);
+max-width: auto;
+margin-top: 50px;
+
+
+/*padding: 50px 50px 0px 50px;*/
+border-radius: 10px;
+box-shadow: 5px 5px 15px rgba (0,0,0,0.3);
 }
 
+.container h2 {
+    margin-bottom: 10px;
+    font-size: 100%;  
+    color: darkgreen;
+    font-weight: bold;   
+}
+
+.container p {
+   line-height:1.4;
+   max-width: fit-content;
    
+} 
+
+img{
+    border-radius: 10px;
+    padding: 20px 0px 0px 20px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    float: left;
+    shape-outside: content-box;
+    margin:0 20px 5px 0;
+}
