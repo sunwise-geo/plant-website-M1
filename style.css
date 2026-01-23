@@ -179,12 +179,22 @@
      color: darkgreen;
      font-weight: bold;
      text-align: left;
+     border-radius: 10px;
+     border-color: darkgreen;
+     background-color: rgba(255, 235, 205, 0.61);
+     padding-left: 10px;
  }
 
 
 
  .intro p {
      flex: 1;
+     font-weight: bold;
+     color:rgb(9, 61, 3);
+     border-radius: 10px;
+     border-color: darkgreen;
+     background-color: rgba(255, 235, 205, 0.61);
+     padding-left: 10px;
      /*margin-top: 30%;
      align-items: center;
      font-weight: bold;
@@ -193,7 +203,7 @@
 
  }
 
- @media (max-width: 768px) {
+   @media (max-width: 768px) {
      .container {
          flex-direction: column;
      }
