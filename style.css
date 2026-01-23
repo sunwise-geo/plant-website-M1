@@ -1,105 +1,115 @@
- nav ul{
-  list-style-type: none;
-  display: flex;
-  padding: 0px;
-  margin: 0px;
-    /*list-style-type: none; enlève les puces devant les éléments de la liste.*/
-}
-nav li{
-    width: 25%;
+ nav ul {
+     list-style-type: none;
+     display: flex;
+     padding: 0px;
+     margin: 0px;
+     /*list-style-type: none; enlève les puces devant les éléments de la liste.*/
+ }
+
+ nav li {
+
+     padding-top: 10px;
+     width: 25%;
+ }
+
+ /*.icon{
     padding-top: 0%;
+    position:absolute;
+    top:10px;
+    left: 10px;
+    font-size: 50%; 
+    width: 50px;
+    height: auto;
+    margin-left: 5em;          
+}*/
 
 
-    .icon{       
-        font-size: 50%; 
-        width: 50px;
-        height: auto;
-        margin-left: 5em;
-          
-    }
-    
-    
-    /*Pour aligner les éléments de la liste horizontalement*/
-    
-}
 
-nav ul::after{
-    content:"";
-    display: table;
-    clear: both;
-    /*Pour éviter que les éléments flottants ne débordent de leur conteneur
-*/}
-    
+ /*Pour aligner les éléments de la liste horizontalement*/
 
-nav{
-    width:100%;
-    height: 55px;
-    margin:10px auto;
-    background-color: rgba(1, 51, 16, 0.7); /* blanc transparent */
-    position: sticky;
-    border-radius: 15px;
-}
+ nav ul::after {
+     content: "";
+     display: table;
+     clear: both;
+     /*Pour éviter que les éléments flottants ne débordent de leur conteneur
+*/
+ }
 
- 
-nav a {
-  padding-top: 0px;  
-  display: block;
-  text-align: center;
-  font-size: clamp(1.25rem, 1.2vw, 1rem);
-  text-align: center;
-  font-weight: bold;
-  color: white;
 
-}
+ nav {
+     width: 100%;
+     height: 55px;
+     margin: 10px auto;
+     background-color: rgba(1, 51, 16, 0.7);
+     /* blanc transparent */
+     position: sticky;
+     border-radius: 15px;
+ }
 
-nav a:hover{
-    position: relative;
-    color: rgb(209, 193, 102);
-    font-weight: bold;
-/* Ajout d'une bordure inférieure lors du survol */
-}
-@media (max-width: 768px) {
-  nav a {
-    font-size: 0.8rem;
-  }
-  /*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
-}
 
-.menu {
-    display: flex;
-    align-items: center;
-}
+ nav a {
+     display: block;
+     text-align: center;
+     font-size: clamp(1.25rem, 1.2vw, 1rem);
+     text-align: center;
+     font-weight: bold;
+     color: white;
 
-body{
-   
-    background-image: url("img_2.jpg");
-    background-size:cover;
-    background-attachment: fixed;
-}
-h1{
-    font-size: 40-large;
-    margin-top: 1cm;
-    color: darkgreen;
-    text-align:center;
-    border-radius: 10px;
-    background-color: transparent;
-    
-}
+ }
 
-#hero{
-    margin: 60px auto;
-    font-size: larger; 
-    background-color: rgba(223, 211, 162, 0.7); /* blanc transparent */
-    padding: 10px 10px;
-    border-radius: 10px;
-    width:fit-content;
-    border-style: solid;
-    border-color: darkgreen;
-    border-width: 2px;
-    
+ nav a:hover {
+     position: relative;
+     color: rgb(209, 193, 102);
+     font-weight: bold;
+     /* Ajout d'une bordure inférieure lors du survol */
+ }
 
-}
-/*img{
+ @media (max-width: 768px) {
+     nav a {
+         font-size: 0.8rem;
+     }
+
+     /*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
+ }
+
+ .menu {
+     display: flex;
+     align-items: center;
+ }
+
+ body {
+
+     background-image: url("img_2.jpg");
+     background-size: cover;
+     background-attachment: fixed;
+ }
+
+ h1 {
+     font-size: 40-large;
+     margin-top: 1cm;
+     color: darkgreen;
+     text-align: center;
+     border-radius: 10px;
+     background-color: transparent;
+
+ }
+
+ #hero {
+     margin: 60px auto;
+     font-size: larger;
+     background-color: rgba(223, 211, 162, 0.7);
+     /* blanc transparent */
+     padding: 10px 10px;
+     border-radius: 10px;
+     width: fit-content;
+     border-style: solid;
+     border-color: darkgreen;
+     border-width: 2px;
+
+
+ }
+
+ /*img{
     float: left;
 	display:flex;
 	position: left;
@@ -108,92 +118,57 @@ h1{
     padding-top: 3.5px;
 }*/
 
-             
-#intro {
+
+ #intro {
+
+     font-size: clamp(1.5rem, 2.5vw, 2rem);
+     font-weight: bold;
+     text-align: center;
+     background-color: rgba(255, 255, 255, 0.8);
+     border-radius: 10px;
+     color: darkgreen;
+     width: fit-content;
+ }
+
+
+ .actif {
+     color: rgb(209, 193, 102);
+     border-bottom: 4px solid darkgreen;
+     font-weight: bold;
+ }
+
+  .container {
     
-    font-size: clamp(1.5rem, 2.5vw, 2rem);
-    font-weight: bold;
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
-    border-radius: 10px;
-    color: darkgreen;
-    width:fit-content;
-}
+     background-color: rgba(255, 235, 205, 0.315);
+     max-width: auto;
+     margin-top: 50px;
+     border-radius: 10px;
+     border-radius: 10px;
+     border-color: black;
+     border-style:solid;
+ }
 
+ .container h2 {
+     position: relative;
+     top: 0px;
+     left: 100px;
+     font-size: 100%;
+     color: darkgreen;
+     font-weight: bold;
+ }
 
-.actif {
-    color: rgb(209, 193, 102);
-    border-bottom: 4px solid darkgreen;
-    font-weight: bold;
-}
+ .container p {
+     text-align: justify;
+     line-height: 1.4;
+     padding: 40px 150px 150px 150px;
+     width: 50px;
+     font-weight: bold;
+     font-size: 1rem;
+     
+ }
 
-#content {
+ .container img{
+    padding: 40px 0px 0px 40px;
+    border-radius: 20%;    
+ }
 
-    font-size: 1.2em;
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding: 50px 50px;
-    background-color: rgba(218, 212, 182, 0.719);
-    border-radius: 30px;
-    color: darkgreen;
-    line-height: 1.6;
-    image-rendering: auto;
-   
-    
-}
-#nom{
-    text-align: left;
-    font-size: large;
-    font-weight: bold;
-    border: 2px solid rgb(5, 63, 30);
-    border-radius: 30px;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);    
-}
-
-/*#info{
-    margin-left: 500px;
-    text-align: left;
-    font-size: medium;
-    border: 2px solid rgb(5, 63, 30);
-    border-radius: 30px;
-    background-color: rgba(255, 255, 255, 0.8);
-    
-}*/
-
-
-.container {
-background-color: rgba(255, 235, 205, 0.315);
-max-width: auto;
-margin-top: 50px;
-
-
-/*padding: 50px 50px 0px 50px;*/
-border-radius: 10px;
-box-shadow: 5px 5px 15px rgba (0,0,0,0.3);
-}
-
-.container h2 {
-    margin-bottom: 10px;
-    font-size: 100%;  
-    color: darkgreen;
-    font-weight: bold;   
-}
-
-.container p {
-   line-height:1.4;
-   max-width: fit-content;
-   
-} 
-
-img{
-    border-radius: 10px;
-    padding: 20px 0px 0px 20px;
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    float: left;
-    shape-outside: content-box;
-    margin:0 20px 5px 0;
-}
