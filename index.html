@@ -8,19 +8,31 @@
     <title>Green Sprout</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img.png" />
+
+
+
+
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
+    <nav class="navbar">
+        <div class="nav-links">
+            <ul class="menu">
 
-            <li class="with-icon"><a href="#"><img src="img.png" class="icon" alt=" " width="35" height="35"></a></li>
-            <li><a href="plante_interieur.html">Plantes d'intérieurs</a></li>
-            <li><a href="plante_exterieur.html">Plantes d'extérieurs</a></li>
-            <li><a href="plante_comestible.html">Plantes comestibles</a></li>
+                <li class="with-icon"><a href="#"><img src="img.png" class="icon" alt=" " width="45" height="45"></a>
+                </li>
+                <li><a href="plante_interieur.html">Plantes d'intérieurs</a></li>
+                <li><a href="plante_exterieur.html">Plantes d'extérieurs</a></li>
+                <li><a href="plante_comestible.html">Plantes comestibles</a></li>
 
-        </ul>
+            </ul>
+        </div>
+        <img src="bouton-bur.png" alt="menu hamburger"
+            class="menu_hamburger"><!--alt permet aux non voyant de savoir ce que la souris survole-->
     </nav>
+
+
+
 
     <div id="hero">
         <h1 text-align:center>Bienvenue sur Green Sprout !</h1>
@@ -34,5 +46,19 @@
     </div>
 
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu_hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    menuHamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('mobile_menu') 
+    })// pourque le menu hamburger fonctionne sur mobile à chaque clique sur le bouton la classe mobile-menu apparaît et quand je reclique la classe disparaît
+</script>
+
+<hr />
+
+<footer>
+    <p>&copy; 2024 Green Sprout. Tous droits réservés.</p>
+</footer>
 
 </html>

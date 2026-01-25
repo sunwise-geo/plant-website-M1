@@ -12,17 +12,6 @@
      width: 25%;
  }
 
- /*.icon{
-    padding-top: 0%;
-    position:absolute;
-    top:10px;
-    left: 10px;
-    font-size: 50%; 
-    width: 50px;
-    height: auto;
-    margin-left: 5em;          
-}*/
-
 
 
  /*Pour aligner les éléments de la liste horizontalement*/
@@ -42,7 +31,6 @@
      margin: 10px auto;
      background-color: rgba(1, 51, 16, 0.7);
      /* blanc transparent */
-     position: sticky;
      border-radius: 15px;
  }
 
@@ -64,17 +52,90 @@
      /* Ajout d'une bordure inférieure lors du survol */
  }
 
- @media (max-width: 768px) {
+ /*@media (max-width: 768px) {
      nav a {
          font-size: 0.8rem;
      }
 
      /*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
- }
+
 
  .menu {
      display: flex;
      align-items: center;
+ }
+
+ .navbar .menu_hamburger {
+     display: none;
+     position: absolute;
+     width: 50px;
+     top: 10px;
+     right: 50px;
+ }
+
+
+
+
+
+ @media screen and (max-width: 900px) {
+
+     .navbar {
+         padding: 0;
+     }
+
+     .navbar .menu_hamburger {
+         display: block;
+     }
+
+    
+
+     .nav-links .navbar {
+         display: block;
+
+     }
+
+     .nav-links {
+         top: 0;
+         left: 0;
+         position: absolute;
+         width: 100%;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color: #2d50183f;
+         -webkit-backdrop-filter: blur(7px);
+         backdrop-filter: blur(7px);
+         margin-left: -100%;
+         /*pour cacher le menu par défaut*/
+         transition: all 0.3s ease;
+     }
+
+     .nav-links.mobile_menu {
+         margin-left: 0;
+     }
+
+
+
+     .nav-links ul {
+         display: flex;
+         flex-direction: column;
+         width: 100%;
+         align-items: center;
+         color: darkgreen;
+
+     }
+
+
+     .navbar .nav-links ul li {
+         margin: 50px 0;
+         font-size: 2rem;
+
+     }
+
+     .nav-links.mobile_menu {
+         margin-left: 0;
+     }
  }
 
  body {
@@ -97,16 +158,14 @@
  #hero {
      margin: 60px auto;
      font-size: larger;
-     background-color: rgba(223, 211, 162, 0.7);
+     background-color: #E9EDC9;
      /* blanc transparent */
      padding: 10px 10px;
      border-radius: 10px;
      width: fit-content;
-     border-style: solid;
+     border-style: outset;
      border-color: darkgreen;
      border-width: 2px;
-
-
  }
 
 
@@ -117,10 +176,11 @@
      font-size: clamp(1.5rem, 2.5vw, 2rem);
      font-weight: bold;
      text-align: center;
-     background-color: rgba(255, 255, 255, 0.8);
+     background-color: rgba(255, 255, 255, 0.425);
      border-radius: 10px;
      color: darkgreen;
      width: fit-content;
+
  }
 
 
@@ -133,56 +193,52 @@
  .container {
 
      display: flex;
-     /*flex-wrap: wrap;*/
      align-items: left;
      justify-content: space-around;
      gap: 5rem;
-     background-color: rgba(255, 235, 205, 0.315);
+     background-color: rgba(2, 49, 12, 0.397);
      margin-top: 50px;
      margin-right: 50px;
      margin-left: 50px;
      border-radius: 10px;
      border-radius: 10px;
      padding: 40px 40px 40px 40px;
-     border-color: rgba(230, 191, 67, 0.877);
+     border-color: rgba(12, 61, 3, 0.877);
      border-style: solid;
 
 
 
 
-     /*background-color: rgba(255, 235, 205, 0.315);
-     max-width: auto;
-     margin-top: 50px;
-     margin-right: 50px;
-     margin-left: 50px;
-     border-color: black;
-     border-style: solid;
-     
-     gap: 20px;
-     padding: 15px;*/
+
 
  }
 
- .image img{
+ .intro {
+     background-color: rgba(132, 170, 111, 0.61);
+     border-radius: 10px;
 
-     
+ }
+
+ .image img {
+
+
      /*width: 100%;*/
-     max-width: 500px;
+     max-width: 100%;
      /*object-fit: cover;*/
      border-radius: 10px;
      vertical-align: middle;
-}
+ }
 
  .container h2 {
      margin-top: 0;
      font-size: auto;
      color: darkgreen;
      font-weight: bold;
-     text-align: left;
+     text-align: center;
      border-radius: 10px;
      border-color: darkgreen;
-     background-color: rgba(255, 235, 205, 0.61);
-     padding-left: 10px;
+     /*background-color: rgba(255, 235, 205, 0.61);*/
+     /*padding-left: 10px;*/
  }
 
 
@@ -190,26 +246,28 @@
  .intro p {
      flex: 1;
      font-weight: bold;
-     color:rgb(9, 61, 3);
+     color: rgb(226, 184, 66);
      border-radius: 10px;
      border-color: darkgreen;
-     background-color: rgba(255, 235, 205, 0.61);
+     /*background-color: rgba(255, 235, 205, 0.61);*/
      padding-left: 10px;
+
      /*margin-top: 30%;
      align-items: center;
      font-weight: bold;
-     font-size:  clamp(1.5rem, 2.5vw, 2rem);
+     
      max-width: fit-content;*/
 
  }
 
-   @media (max-width: 768px) {
+ @media (max-width: 768px) {
      .container {
          flex-direction: column;
      }
 
      /*source chat gpt pour afficher les éléments en colonne pour un effet scrolling sur smartphone*/
  }
-.solid{
-    font-style: oblique;
-}
+
+ .solid {
+     font-style: oblique;
+ }
