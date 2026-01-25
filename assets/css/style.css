@@ -52,12 +52,9 @@
      /* Ajout d'une bordure inférieure lors du survol */
  }
 
- /*@media (max-width: 768px) {
-     nav a {
-         font-size: 0.8rem;
-     }
+ 
 
-     /*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
+   
 
 
  .menu {
@@ -71,13 +68,15 @@
      width: 40px;
      top: 10px;
      right: 40px;
+     z-index: 51;/*sert à gerer les layers*/
  }
 
 
 
-
+/*Media query pour que le site soit responsive design en fonction de la taille es écrans*/
 
  @media screen and (max-width: 900px) {
+    
 
      .navbar {
          padding: 0;
@@ -109,6 +108,7 @@
          margin-left: -100%;
          /*pour cacher le menu par défaut*/
          transition: all 0.3s ease;
+         z-index: 50;
      }
 
      .nav-links.mobile_menu {
@@ -146,12 +146,17 @@
          width: fit-content;
          padding: 10px 10px;
      }
+
+     .mobile-menu-visible {
+         overflow: hidden;
+     }
+
  }
 
 
  body {
 
-     background-image: url("img_2.jpg");
+     background-image: url("../images/background.jpg");
      background-size: cover;
      background-attachment: fixed;
  }
@@ -208,7 +213,7 @@
 
 
  .container {
-/*un conteneur nous permettant de mieux visulaliser les paragraphes et les images*/
+     /*un conteneur nous permettant de mieux visulaliser les paragraphes et les images*/
      display: flex;
      align-items: left;
      justify-content: space-around;
