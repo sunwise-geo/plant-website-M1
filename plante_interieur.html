@@ -8,6 +8,8 @@
     <title>Plantes d'intérieurs</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="img.png" />
+    <!--defer pour que le script se charge après le html-->
+    <script src="script.js" defer></script>
 
 
 </head>
@@ -62,7 +64,9 @@
             <label class="contact">
                 Quelle est votre plante d'intérieur préféré ?
             </label>
-            <input></input>
+            <input id="plant-input"></input>
+            <button onclick="preferedPlant()">Envoyer</button>
+
         </div>
     </div>
 
@@ -70,14 +74,6 @@
 
 
 </body>
-
-<script>
-    const menuHamburger = document.querySelector(".menu_hamburger")
-    const navLinks = document.querySelector(".nav-links")
-    menuHamburger.addEventListener('click', () => {
-        navLinks.classList.toggle('mobile_menu')
-    })// pourque le menu hamburger fonctionne sur mobile à chaque clique sur le bouton la classe mobile-menu apparaît et quand je reclique la classe disparaît
-</script>
 
 <hr />
 

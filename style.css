@@ -214,16 +214,15 @@
      border-color: rgba(12, 61, 3, 0.877);
      border-style: solid;
 
-
-
-
-
-
  }
 
  .intro {
+     
+     padding: 40px 40px 40px 40px;
      background-color: rgba(132, 170, 111, 0.61);
      border-radius: 10px;
+     
+
 
  }
 
@@ -258,7 +257,7 @@
      border-radius: 10px;
      border-color: darkgreen;
      /*background-color: rgba(255, 235, 205, 0.61);*/
-     padding-left: 10px;
+     padding: 40px 40px 40px 40px;
 
      /*margin-top: 30%;
      align-items: center;
@@ -271,6 +270,13 @@
  @media (max-width: 768px) {
      .container {
          flex-direction: column;
+     }
+     .intro {
+         padding: 10px;
+     }
+     .intro p {
+         padding: 0px;
+         text-align: center;
      }
 
      /*source chat gpt pour afficher les éléments en colonne pour un effet scrolling sur smartphone*/
