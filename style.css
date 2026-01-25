@@ -8,7 +8,7 @@
 
  nav li {
 
-     padding-top: 10px;
+     padding-top: 2px;
      width: 25%;
  }
 
@@ -27,11 +27,11 @@
 
  nav {
      width: 100%;
-     height: 55px;
-     margin: 10px auto;
+     height: 50x;
+     /*margin: 10px auto;*/
      background-color: rgba(1, 51, 16, 0.7);
      /* blanc transparent */
-     border-radius: 15px;
+     border-radius: 30px;
  }
 
 
@@ -68,9 +68,9 @@
  .navbar .menu_hamburger {
      display: none;
      position: absolute;
-     width: 45px;
-     top: 15px;
-     right: 45px;
+     width: 40px;
+     top: 10px;
+     right: 40px;
  }
 
 
@@ -87,7 +87,7 @@
          display: block;
      }
 
-    
+
 
      .nav-links .navbar {
          display: block;
@@ -136,16 +136,18 @@
      .nav-links.mobile_menu {
          margin-left: 0;
      }
+
      .nav-links ul li a.actif {
-         
+
          font-weight: bold;
          border-radius: 10px;
          color: rgb(34, 85, 21);
          background-color: rgba(233, 229, 224, 0.493);
          width: fit-content;
-            padding: 10px 10px;
+         padding: 10px 10px;
      }
  }
+
 
  body {
 
@@ -159,7 +161,6 @@
      margin-top: 1cm;
      color: darkgreen;
      text-align: center;
-     border-radius: 10px;
      background-color: transparent;
 
  }
@@ -182,24 +183,32 @@
 
  #intro {
 
-     font-size: clamp(1.5rem, 2.5vw, 2rem);
+     font-size: clamp(1.2rem, 2.5vw, 2rem);
      font-weight: bold;
      text-align: center;
-     background-color: rgba(255, 255, 255, 0.425);
+     background-color: rgba(223, 220, 213, 0.603);
      border-radius: 10px;
-     color: darkgreen;
+     color: #103f0e;
      width: fit-content;
 
  }
 
 
  .actif {
-     color: rgb(209, 193, 102);
+     color: #E9EDC9;
+     background-color: rgb(2, 46, 2);
      font-weight: bold;
+     border-radius: 30px;
+     padding: 10px 10px 10px 10px;
+     position: inherit;
  }
 
- .container {
+ /*Création de galerie, source codepen.io*/
 
+
+
+ .container {
+/*un conteneur nous permettant de mieux visulaliser les paragraphes et les images*/
      display: flex;
      align-items: left;
      justify-content: space-around;
@@ -217,14 +226,14 @@
  }
 
  .intro {
-     
+     /*un conteneur pour mieux visualiser le texte*/
      padding: 40px 40px 40px 40px;
      background-color: rgba(132, 170, 111, 0.61);
      border-radius: 10px;
-     
-
 
  }
+
+
 
  .image img {
 
@@ -238,8 +247,8 @@
 
  .container h2 {
      margin-top: 0;
-     font-size: auto;
-     color: darkgreen;
+     font-size: 2em;
+     color: rgb(2, 46, 2);
      font-weight: bold;
      text-align: center;
      border-radius: 10px;
@@ -251,12 +260,13 @@
 
 
  .intro p {
-     flex: 1;
+     /*flex: 1;*/
+     font-size: 1.2em;
      font-weight: bold;
-     color: rgb(226, 184, 66);
+     color: rgb(41, 80, 9);
      border-radius: 10px;
      border-color: darkgreen;
-     /*background-color: rgba(255, 235, 205, 0.61);*/
+
      padding: 40px 40px 40px 40px;
 
      /*margin-top: 30%;
@@ -271,9 +281,11 @@
      .container {
          flex-direction: column;
      }
+
      .intro {
          padding: 10px;
      }
+
      .intro p {
          padding: 0px;
          text-align: center;
@@ -284,4 +296,34 @@
 
  .solid {
      font-style: oblique;
+ }
+
+ .Savais-tu {
+     font-size: large;
+     color: rgb(128, 74, 5) !important;
+     margin-top: 30px;
+     background-color: rgba(255, 235, 205, 0.61);
+     border-radius: 25px;
+
+ }
+
+ .contact {
+     font-size: large;
+     font-weight: bold;
+     color: rgb(2, 46, 2);
+     margin-top: 30px;
+ }
+
+ #plant-input {
+     margin-top: 20px;
+     padding: 10px;
+     border-radius: 10px;
+     border: 2px solid darkgreen;
+     font-size: medium;
+ }
+
+ #hr {
+     margin-top: 50px;
+     border: 2px solid black;
+
  }
