@@ -11,22 +11,28 @@
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
+    <nav class="navbar">
 
-            <!-- LOGO -->
-            <li class="logo">
-                <a href="index.html">
-                    <img src="img.png" class="icon" alt="Logo" width="35" height="35">
-                </a>
-            </li>
+        <div class="nav-links">
+            <ul class="menu">
 
-            <!-- AUTRES LIENS -->
-            <li><a href="plante_interieur.html">Plantes d'intérieurs</a></li>
-            <li><a class="actif" href="plante_exterieur.html">Plantes d'extérieurs</a></li>
-            <li><a href="plante_comestible.html">Plantes comestibles</a></li>
 
-        </ul>
+                <!-- LOGO -->
+                <li class="logo">
+                    <a href="index.html">
+                        <img src="img.png" class="icon" alt="Logo" width="35" height="35">
+                    </a>
+                </li>
+
+
+                <!-- AUTRES LIENS -->
+                <li><a href="plante_interieur.html">Plantes d'intérieurs</a></li>
+                <li><a class="actif" href="plante_exterieur.html">Plantes d'extérieurs</a></li>
+                <li><a href="plante_comestible.html">Plantes comestibles</a></li>
+            </ul>
+        </div>
+        <img src="bouton-bur.png" alt="menu hamburger"
+            class="menu_hamburger"><!--alt permet aux non voyant de savoir ce que la souris survole-->
     </nav>
 
     <div id="hero">
@@ -53,6 +59,15 @@
     </div>
 
 </body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu_hamburger")
+    const navLinks = document.querySelector(".nav-links")
+    menuHamburger.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile_menu')
+    })// pourque le menu hamburger fonctionne sur mobile à chaque clique sur le bouton la classe mobile-menu apparaît et quand je reclique la classe disparaît
+</script>
+
 <hr />
 
 <footer>
